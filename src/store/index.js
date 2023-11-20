@@ -40,6 +40,8 @@ export default createStore({
 
    
     play: function (state, bayaan) {
+      var slider = document.getElementById("slider")
+
       var {
         date,
         mm,
@@ -53,7 +55,6 @@ export default createStore({
         slider.value = percentagePosition;
       }
 
-      var slider = document.getElementById("slider")
       // Create a reference to the file we want to download
       const storage = getStorage();
     
@@ -105,6 +106,8 @@ export default createStore({
         var timerMin = Math.floor(audio.currentTime / 60);
         var timerSec = Math.floor(audio.currentTime % 60);
         state.currentDuration = `${timerMin >= 10 ? timerMin : '0' + timerMin}:${timerSec >= 10 ? timerSec : '0' + timerSec}`;
+        audio.ontimeupdate = changeTimelinePosition;
+
     }, 1000);
 
     audio.play();

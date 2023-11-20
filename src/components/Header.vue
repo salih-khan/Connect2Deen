@@ -1,6 +1,6 @@
 <template>
 <div class="container-fluid header">
-    <div class="container">
+    <div class="container button-container">
         <div class="row">
             <!-- First row (larger) -->
             <div class="col-12 text-center">
@@ -117,7 +117,7 @@ export default {
 
 <style scoped>
 #home-nav {
-    background-color: #6D9886;
+    margin-left: 10px;
     margin-right: 10px;
     color: #F7F7F7;
     padding: 10px 10px;
@@ -128,17 +128,20 @@ export default {
 }
 
 .header {
-    background-color: #393E46;
+    background-image: url('../assets/images/Design 8.png');
     padding: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .header .col {
+    margin: 0px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .header .col .button {
-    background-color: #F2E7D5;
+    background: rgba(255, 255, 255, 0.75);
     color: #333;
 }
 
@@ -149,10 +152,11 @@ export default {
 
 #logo {
     margin: 10px;
+    background-color: #071418;
 }
 
 .header {
-    background-color: #393E46;
+    background-color: #071418;
 }
 
 .scrollable-navbar {
@@ -163,6 +167,8 @@ export default {
 
 .nav-link {
     display: inline-block;
+    margin-left: 10px;
+
     margin-right: 10px;
     user-select: none;
     /* Make links unselectable */
@@ -171,4 +177,5 @@ export default {
     -webkit-user-select: none;
     padding: 10px 10px;
 }
+
 </style>
