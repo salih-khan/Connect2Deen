@@ -1,12 +1,10 @@
 <template>
 <div class="container-fluid header">
+    <img id="logo" src="../assets/icons/logo.png" width="50" height="50">
+        
+
     <div class="container button-container">
-        <div class="row">
-            <!-- First row (larger) -->
-            <div class="col-12 text-center">
-                <img id="logo" src="../assets/icons/logo.png" width="50" height="50">
-            </div>
-        </div>
+
         <div class="row">
             <!-- Second row (smaller) -->
             <div class="col">
@@ -19,15 +17,8 @@
                         <router-link class="btn button nav-link " to="/category/Pearls">Pearls of Wisdom</router-link>
                         <router-link class="btn button nav-link " to="/category/Sisters’ Programmes">Sisters’ Programmes</router-link>
                         <router-link class="btn button nav-link " to="/category/Jumuʿah Lectures">Jumuʿah Lectures</router-link>
-                        <router-link class="btn button nav-link " to="/category/Youth Programmes">Youth Programmes</router-link>
-                        <router-link class="btn button nav-link " to="/category/Sīrah Conferences">Sīrah Conferences</router-link>
                         <router-link class="btn button nav-link " to="/category/Short and Sweet">Short and Sweet</router-link>
                         <router-link class="btn button nav-link " to="/category/A Commentary on Imām al-Būṣīrī’s Qaṣīdah Burdah">A Commentary on Imām al-Būṣīrī’s Qaṣīdah Burdah</router-link>
-                        <router-link class="btn button nav-link " to="/category/Lockdown Lectures">Lockdown Lectures</router-link>
-                        <router-link class="btn button nav-link " to="/category/Khatme Nubuwwat">Khatme Nubuwwat</router-link>
-                        <router-link class="btn button nav-link " to="/category/Hajj Lectures">Hajj Lectures</router-link>
-                        <router-link class="btn button nav-link " to="/category/EĪd Lectures">EĪd Lectures</router-link>
-                        <router-link class="btn button nav-link " to="/category/Lives of the Blessed Sahābah radiyallāhu ʿanhum">Lives of the Blessed Sahābah radiyallāhu ʿanhum</router-link>
                         <router-link class="btn button nav-link " to="/category/Ramadān Lectures">Ramadān Lectures</router-link>
 
                     </PerfectScrollbar>
@@ -151,7 +142,8 @@ export default {
 }
 
 #logo {
-    margin: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
     background-color: #071418;
 }
 
