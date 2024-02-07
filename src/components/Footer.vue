@@ -88,6 +88,7 @@
            >
         © 2023 Copyright: Connect2Deen
         <br/>
+        <router-link to="/policy"><u>Privacy Policy</u></router-link>
         <br/>
         <br/>
         <br/>

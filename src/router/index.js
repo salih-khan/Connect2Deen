@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import CategoryView from '../views/CategoryView.vue'
 import DarsView from '../views/DarsView.vue'
-
+import Policy from '../views/Policy.vue'
 
 const routes = [
   {
@@ -19,6 +19,11 @@ const routes = [
     path: '/category/:categoryType',
     name: 'category',
     component: CategoryView
+  },
+  {
+    path: '/policy',
+    name: 'policy',
+    component: Policy
   },
   {
     path: '/:catchAll(.*)', // This will match any path
